@@ -1,0 +1,250 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+*{
+    max-width:100%;
+}
+a.navbar-brand {
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
+}
+
+/* Provide sufficient contrast against white background */
+a{
+    color: #0366d6;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+    .cat-item{
+        width:22%;
+    }
+}
+
+.border-top {
+    border-top: 1px solid #e5e5e5;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+    font-size: 1rem;
+    line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px; /* Vertically center the text there */
+}
+
+.filters {
+}
+
+.cont {
+    width: 100%;
+}
+
+.align {
+    text-align: center;
+}
+
+.row {
+    max-width: 100%;
+}
+
+.btn-mid {
+    text-align: center
+}
+
+.card-text {
+    font-size: 13px;
+}
+
+.col-sm-9 {
+    display: inline-flex;
+}
+
+.card-set {
+    width: 230px;
+    margin-right: 10px;
+}
+header{
+    text-align:center;
+}
+.padding-left{
+    padding-left:100px;
+}
+.header-mid{
+    padding-top:10px;
+    width:1200px;
+    margin:0 auto;
+    display:inline-flex;
+}
+.call-us{
+    min-width:850px;
+    text-align:right;
+ display:inline-flex;
+ justify-content:flex-end;
+}
+.number{
+    margin-left:50px;
+    font-weight:bold;
+    margin-top:5px;
+}
+.header-top{
+    width:100%;
+
+}
+.nav-item{
+    color:white;
+}
+.quest{
+    margin-top:15px;
+}
+.logo{
+    margin-top:15px;
+    width:200px;
+    height:43px;
+}
+.bg-dark {
+    background-color: #314555!important;
+}
+.navbar{
+    margin-bottom:0!important;
+}
+.mid-text{
+    margin:0 auto;
+    width:750px;
+    font-size:70px;
+    font-weight:bold;
+    color:white;
+    font-family:Arial;
+    text-align:center;
+}
+.background {
+    padding-top: 100px;
+    background-image: url(/img/back.jpg);
+    background-color: rgba(0,0,0,.5);
+    background-blend-mode: darken;
+    background-size: 100%;
+    background-position-y: 45%;
+    height: 600px;
+}
+.back1 {
+    background-image: url(/img/back1.jpg);
+    height: 250px;
+    background-position-y: 60%;
+}
+.back2 {
+    background-image: url(/img/back2.jpg);
+    height: 250px;
+    background-position-y: 90%;
+    padding-top:75px;
+}
+.buttons{
+    width:100%;
+    display:inline-flex;
+    justify-content:center;
+}
+.but:first-child{
+    margin-right:30px;
+}
+.h2{
+    padding-left:100px;
+    color:white;
+    font-weight:bold;
+    font-size:70px;
+}
+.but {
+    font-size:18px;
+    width: 180px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white !important;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #fa7502 !important;
+    border: 1px solid #e66b00 !important;
+    transition:0.3s;
+}
+.but:hover{
+    background-color:#e66b00!important;
+}
+.div-align{
+    width:100%;
+    text-align:center;
+}
+.grey-text{
+    color:#7a7a7a;
+}
+.inline {
+    display: inline-block;
+    max-width:100%;
+    min-width:100%!important;
+}
+.cat-item{
+    max-width:30%;
+    margin-top:15px;
+    float:left;
+    margin-right:15px;
+    border: 1px solid #c4c4c4;
+}
+.cat-pic{
+    border-bottom:1px solid #c4c4c4;
+}
+.a{
+    background-color:cornsilk!important;
+}
+.b{
+    background-color:aquamarine!important;
+}
+.c{
+    background-color:lightcoral!important;
+}
+.d{
+    background-color:orange!important;
+}
+.e{
+    background-color:lightblue!important;
+}

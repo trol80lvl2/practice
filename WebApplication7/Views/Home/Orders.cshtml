@@ -1,0 +1,19 @@
+﻿<table style="width:97%;font-size:18px;margin-left:15px;" class="table">
+    <tr>
+        <td>Дата</td>
+        <td>Категорія товару</td>
+        <td>Виробник</td>
+        <td>Модель</td>
+        <td>Повна назва товару</td>
+    </tr>
+    @foreach(var item in ViewBag.Items)
+    {
+        <tr class="@item.Status">
+            <td>@item.DateStart-@item.DateEnd</td>
+            <td>@item.Category</td>
+            <td>@item.Manufacturer</td>
+            <td>@item.Model</td>
+            <td>@item.Manufacturer&nbsp;@item.Model</td>
+        </tr>
+    }
+</table>

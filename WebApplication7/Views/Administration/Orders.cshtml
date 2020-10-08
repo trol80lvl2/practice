@@ -1,0 +1,35 @@
+﻿<a class="a" href="/administration/orders?status=a">Очікують</a>&nbsp;
+<a class="b" href="/administration/orders?status=b">Одобрені</a>&nbsp;
+<a class="c" href="/administration/orders?status=c">Відхилені</a>&nbsp;
+<a class="d" href="/administration/orders?status=d">Повернуті</a>&nbsp;
+<a class="e" href="/administration/orders?status=e">Не повернуті</a>&nbsp;
+<a href="/administration/orders">Усі</a>&nbsp;
+<table style="width:97%;font-size:15px;margin-left:15px;" class="table">
+    <tr>
+        <td>Дата</td>
+        <td>Категорія товару</td>
+        <td>Виробник</td>
+        <td>Модель</td>
+        <td>Повна назва товару</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    @foreach (var item in ViewBag.Items)
+    {
+<tr class="@item.Status">
+    <td>@item.DateStart-@item.DateEnd</td>
+    <td title="Повернутих:42">@item.Category</td>
+    <td>@item.Manufacturer</td>
+    <td>@item.Model</td>
+    <td>@item.Manufacturer&nbsp;@item.Model</td>
+    <td><a href="/administration/changestatus?id=@item.Id&status=a" class="a btn btn-primary"></a></td>
+    <td><a href="/administration/changestatus?id=@item.Id&status=b" class="b btn btn-primary"></a></td>
+    <td><a href="/administration/changestatus?id=@item.Id&status=c" class="c btn btn-primary"></a></td>
+    <td><a href="/administration/changestatus?id=@item.Id&status=d" class="d btn btn-primary"></a></td>
+    <td><a href="/administration/changestatus?id=@item.Id&status=e" class="e btn btn-primary"></a></td>
+</tr>
+    }
+</table>

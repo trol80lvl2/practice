@@ -1,0 +1,33 @@
+﻿@{
+    ViewData["Title"] = "Add something new";
+}
+<div class="row">
+    <div class="col-md-5">
+        <form class="form" method="post" name="form">
+            <select class="form-control" name="Category">
+                @foreach (var c in ViewBag.Category)
+                {
+                    <option value="@c.IdCat">@c.NameCat</option>
+                }
+            </select>
+            <select class="form-control" name="Manufacturer">
+                @foreach (var c in ViewBag.Manufacturer)
+                {
+                    <option value="@c.IdMan">@c.NameMan</option>
+                }
+            </select>
+            <select class="form-control" name="Model">
+                @foreach (var c in ViewBag.Model)
+                {
+                    <option value="@c.IdMod">@c.NameMod</option>
+                }
+            </select>
+            <input type="text" class="form-control" name="FirstName" placeholder="Ім'я" />
+            <input type="text" class="form-control" name="LastName" placeholder="Прізвише" />
+            <input type="date" class="form-control" name="DateStart" />
+            <input type="date" class="form-control" name="DateEnd" />
+            <input type="submit" class="btn btn-danger" value="add" />
+        </form>
+    </div>
+</div>
+
